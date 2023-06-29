@@ -4,10 +4,502 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' type='text/javascript'></script>
+    <script src='https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/slick.js' type='text/javascript'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="robots" content="noarchive">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <div class="background"></div>
+    <div class="header__info">
+      <div class="header__wrapper">
+        <header class="header">
+          <div class="header__container">
+            <button class="burger burger-closed" id="burger-menu--closed">
+              <img class="open__image" src="./images/menu.svg" alt="burger menu">
+            </button>  
+            <a target="_blank" rel="nofollow" class="logo__link" href="/">
+              <img class="main__logo" src="images/logo.svg" alt="logo">
+            </a>
+          </div> 
+          <nav class="navigation nav">
+            <a target="_blank" rel="nofollow" href="/" class="nav__link-element">
+              <img src="images/in-play.svg" alt="in play" class="nav__image in-play__image">
+              <p class="nav__text">ANA SAYFA</p>
+            </a>
+            <a target="_blank" rel="nofollow" href="/" class="nav__link-element">
+              <img src="images/sports.svg" alt="sports" class="nav__image sports__image">
+              <p class="nav__text">SPOR BAHİS</p>
+            </a>
+            <a target="_blank" rel="nofollow" href="/" class="nav__link-element">
+              <img src="images/games.svg" alt="games" class="nav__image games__image">
+              <p class="nav__text">CASİNO</p>
+            </a>
+            <a target="_blank" rel="nofollow" href="/" class="nav__link-element">
+              <img src="images/live_casino.svg" alt="live-casino" class="live-casino__image nav__image">
+              <p class="nav__text">RULET</p>
+            </a>
+            <a target="_blank" rel="nofollow" href="/" class="nav__link-element">
+              <img src="images/promotions.svg" alt="promotions" class="promotions__image nav__image">
+              <p class="nav__text">BONUS</p>
+            </a>
+            <a target="_blank" rel="nofollow" href="/" class="nav__link-element">
+              <img src="images/wand.svg" alt="wand" class="wand__image nav__image">
+              <p class="nav__text">ÇEKME</p>
+            </a>
+            <a target="_blank" rel="nofollow" href="/" class="nav__link-element">
+              <img src="images/phone.svg" alt="phone" class="phone__image nav__image">
+              <p class="nav__text">MOBİL UYGULAMA</p>
+            </a>
+          </nav>
+          <a href="/" class="header__button">
+            KAYIT OL
+          </a>
+        </header>
+      </div>
+      <div class="slider__wrapper">
+        <div class="slider">
+          <div class="SliderContainer">
+            <h3 class="SliderHead"><span class="SliderArrows"></span></h3>
+            <div class="MainSliderCarousel">
+              <div class="SliderProductBlock">
+                <div class="SliderContent">
+                  <div class="Slider-img-fill">
+                    <div class="main__image main__image--first" alt="logo">
+                      <span class="welcome-banner__title">HOŞ GELDİN<br><span class="orange__title">Bonusu</span></span>
+                      <p class="welcome-banner__paragraph">10.000 TL'ye Kadar</p>
+                      <div class="welcome-banner__buttons">
+                        <a
+                          target="_blank"
+                          rel="nofollow"
+                          href="/"
+                          class="welcome-banner__button orange__button"
+                        >
+                          Bonus al
+                        </a>
+                        <a
+                          target="_blank"
+                          rel="nofollow"
+                          href="/"
+                          class="welcome-banner__button transparent__button"
+                        >
+                          Daha Fazla
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="SliderProductBlock">
+                <div class="SliderContent">
+                  <div class="Slider-img-fill">
+                    <div class="main__image main__image--second" alt="logo">
+                      <span class="welcome-banner__title">HOŞ GELDİN<br><span class="orange__title">Bonusu</span></span>
+                      <p class="welcome-banner__paragraph">10.000 TL'ye Kadar</p>
+                      <div class="welcome-banner__buttons">
+                        <a
+                          target="_blank"
+                          rel="nofollow"
+                          href="/"
+                          class="welcome-banner__button orange__button"
+                        >
+                          Bonus al
+                        </a>
+                        <a
+                          target="_blank"
+                          rel="nofollow"
+                          href="/"
+                          class="welcome-banner__button transparent__button"
+                        >
+                          Daha Fazla
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="SliderProductBlock">
+                <div class="SliderContent">
+                  <div class="Slider-img-fill">
+                    <div class="main__image main__image--second" alt="logo">
+                      <span class="welcome-banner__title">HOŞ GELDİN<br><span class="orange__title">Bonusu</span></span>
+                      <p class="welcome-banner__paragraph">10.000 TL'ye Kadar</p>
+                      <div class="welcome-banner__buttons">
+                        <a
+                          target="_blank"
+                          rel="nofollow"
+                          href="/"
+                          class="welcome-banner__button orange__button"
+                        >
+                          Bonus al
+                        </a>
+                        <a
+                          target="_blank"
+                          rel="nofollow"
+                          href="/"
+                          class="welcome-banner__button transparent__button"
+                        >
+                          Daha Fazla
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <section class="section">
+        <p class="section__paragraph">Rokubet, bir çeşit online bahis sitesidir. Bahis, casino oyunları ve canlı bahis seçenekleri sunar. Kullanıcılarına yüksek oranlarla birçok spor dalında bahis yapma fırsatı verir.</p>
+        <p class="section__paragraph">Roku casino, kullanıcılarına güvenli bir bahis ortamı sağlar. Kullanıcıların güvenliği için SSL sertifikası kullanır ve kişisel bilgilerin gizliliğine özen gösterir. Sistemde aynı zamanda ikili doğrulama avantajı bulunur.</p>
+        <div class="table">
+          <div class="table-row">
+            <div class="table-title-container">
+              <p class="table-title first-table-title">Resmi internet sitesi	</p>
+            </div>
+            <a class="table-description" href="https://rokubet46.com" target="_blank" rel="nofollow">rokubet46.com</a>
+          </div>
+          <div class="table-row">
+            <div class="table-title-container">
+              <p class="table-title first-table-title">Kuruluş yılı	</p>
+            </div>
+            <p class="table-description">2020</p>
+          </div>
+          <div class="table-row">
+            <div class="table-title-container">
+              <p class="table-title first-table-title">Mal sahibi</p>
+            </div>
+            <p class="table-description">Abundantia B.V.</p>
+          </div>
+          <div class="table-row">
+            <div class="table-title-container">
+              <p class="table-title first-table-title">Kayıt Lisansı</p>
+            </div>
+            <p class="table-description">Curacao</p>
+          </div>
+          <div class="table-row">
+            <div class="table-title-container">
+              <p class="table-title first-table-title">Bonuslar ve Promosyonlar</p>
+            </div>
+            <p class="table-description">Karşılama ve Yeniden Yükleme bonusları, Turnuva ve Haftalık promosyonlar</p>
+          </div>
+          <div class="table-row">
+            <div class="table-title-container">
+              <p class="table-title first-table-title">Mevcut diller</p>
+            </div>
+            <p class="table-description">Türkçe, Portekizce, İngilizce, İtalyanca, Hintçe, İspanyolca</p>
+          </div>
+          <div class="table-row">
+            <div class="table-title-container">
+              <p class="table-title first-table-title">Oyun sağlayıcıları	</p>
+            </div>
+            <p class="table-description">NetEnt, Evolution Gaming, QuickSpin, Booming Games, Play’n GO, Microgaming, EGT, Yggdrasil, Betsoft, Ezugi, Pragmatic Play ve diğerleri</p>
+          </div>
+          <div class="table-row">
+            <div class="table-title-container">
+              <p class="table-title first-table-title">Mevcut oyunlar	</p>
+            </div>
+            <p class="table-description">Slotlar, Jackpotlar, Canlı Casino Oyunları, Rulet, Kart Oyunları</p>
+          </div>
+          <div class="table-row">
+            <div class="table-title-container">
+              <p class="table-title first-table-title">Kabul edilen para birimleri</p>
+            </div>
+            <p class="table-description">TRY, INR, EUR, USD, AUD, BDT, BLR, CAD, CLP, HUF, JPY, NOK, NZD, PEN, PLN</p>
+          </div>
+          <div class="table-row">
+            <div class="table-title-container">
+              <p class="table-title first-table-title">Ödeme metodları</p>
+            </div>
+            <p class="table-description">Elektronik transfer, Visa, MasterCard, E-Cüzdanlar (Neteller, Skrill, EcoPayz, Paysafe, Sticpay), Kripto para birimleri (Ripple, Bitcoin, Litecoin, Ethereum)</p>
+          </div>
+          <div class="table-row">
+            <div class="table-title-container">
+              <p class="table-title first-table-title">Minimum depozit</p>
+            </div>
+            <p class="table-description">50 TRY</p>
+          </div>          <div class="table-row">
+            <div class="table-title-container">
+              <p class="table-title first-table-title">Mobil uygulama</p>
+            </div>
+            <p class="table-description">Evet</p>
+          </div>
+          <div class="table-row">
+            <div class="table-title-container">
+              <p class="table-title first-table-title">Müşteri desteğ</p>
+            </div>
+            <p class="table-description">Canlı Sohbet, e-posta</p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <p class="section__title">Türk Oyuncular Neden Rokubet’i Diğer Bahis Platformlarına Tercih Ediyor?</p>
+        <p class="section__paragraph">Rokucasino kullanıcı dostu bir arayüzü vardır. Siteye erişmek için sadece internet bağlantısı gereklidir ve mobil cihazlar üzerinden de erişim sağlanabilir. Kullanıcılar, istedikleri zaman istedikleri yerden bahis yapabilirler. Rokubet, kullanıcılarına çeşitli oyun seçenekleri sunar.</p>
+        <p class="section__paragraph"><em>Bunlar arasında:</em></p>
+        <ul class="section__list">
+          <li class="list__element">Spor bahisleri: Futbol, basketbol, tenis, voleybol, buz hokeyi, hentbol, ragbi, dart, bisiklet yarışı, Amerikan futbolu, MMA, boks, golf, motor sporları gibi birçok spor dalında bahis yapma imkanı sunar.</li>
+          <li class="list__element">Canlı bahis: Rokubet, canlı maç yayınları eşliğinde kullanıcılara canlı bahis yapma imkanı sunar. Kullanıcılar, maçın gidişatına göre bahislerini değiştirebilirler.</li>
+          <li class="list__element">Casino oyunları: Rokubet’in kullanıcılarına sunduğu casino oyunları arasında slot oyunları, blackjack, rulet, bakara ve canlı krupiyer oyunları yer alır.</li>
+          <li class="list__element">Sanal sporlar: Rokubet, kullanıcılarına sanal futbol, sanal tenis, sanal at yarışı ve sanal köpek yarışı gibi sanal sporlar üzerinde bahis yapma fırsatı sunar.</li>
+          <li class="list__element">E-spor: Rokubet, League of Legends, Dota 2, CS:GO, Rainbow Six Siege, Overwatch ve FIFA gibi popüler e-spor oyunları üzerinde bahis yapma imkanı sunar.</li>
+        </ul>
+        <p class="section__paragraph">Böylelikle geniş standartlarda bahis yapma deneyimi sunar.</p>
+      </section>
+      <section class="section">
+        <p class="section__title">Roku Casino Avantajları Nelerdir?</p>
+        <p class="section__paragraph">Rokubet kullanıcılara çeşitli oyun seçenekleri sunar ve kullanıcılar istedikleri oyun üzerinde bahis yapabilirler.</p>
+        <p class="section__paragraph"><em>Rokubet’in kullanıcılarına sunduğu bazı avantajlar şunlardır:</em></p>
+        <ol class="section__ordered-list">
+          <li class="list__ordered-element"><div><p class="number">1</p></div>Roku-bet, kullanıcılara spor bahisleri, canlı bahis, casino oyunları, sanal sporlar ve e-spor gibi birçok oyun seçeneği sunar. Bu sayede, kullanıcılar istedikleri oyun üzerinde bahis yapabilirler.</li>
+          <li class="list__ordered-element"><div><p class="number">2</p></div>Rokubet, kullanıcılara yüksek oranlar sunar. Bu sayede, kazançlarınızı artırabilirsiniz.</li>
+          <li class="list__ordered-element"><div><p class="number">3</p></div>Roku casino, kullanıcılara güvenli bir bahis ortamı sunar. Site, SSL sertifikası kullanır ve kişisel bilgilerin gizliliğine özen gösterir. Ayrıca, kullanıcıların hesaplarının güvenliği için iki faktörlü kimlik doğrulama sistemini kullanır.</li>
+          <li class="list__ordered-element"><div><p class="number">4</p></div>Rokubet, mobil uyumludur. Kullanıcılar, istedikleri zaman istedikleri yerden bahis yapabilirler.</li>
+          <li class="list__ordered-element"><div><p class="number">5</p></div>Roku-casino, kullanıcılarına özel bonuslar ve promosyonlar sunar. Bu sayede, kazançlarınızı artırabilirsiniz.</li>
+          <li class="list__ordered-element"><div><p class="number">6</p></div>Rokubet, müşteri hizmetleri konusunda özenli davranır. Kullanıcılara canlı destek hizmeti sunar ve e-posta yoluyla da iletişim kurulabilir. Müşteri hizmetleri ekibi, kullanıcıların her türlü sorununu çözmeye yardımcı olur.</li>
+        </ol>
+        <p class="section__paragraph">Roku casino kullanıcılarına güvenli, çeşitli ve keyifli bir oyun deneyimi sunar. Ancak, bahis oynamadan önce dikkatli bir şekilde düşünmeli ve sorumlu bir şekilde bahis yapmalısınız.</p>
+      </section>
+      <section class="section">
+        <p class="section__title">Roku-Casino Lisanslı Mı?</p>
+        <p class="section__paragraph">Avrupa lisansına sahip bir site olarak ön plana çıkmaktadır. Bu lisans, Rokubet’in online bahis ve oyun hizmetleri sunmasına olanak tanır. Curacao eGaming otoritesi, online bahis ve oyun sitelerinin lisanslandırılması ve düzenlenmesi konusunda dünya çapında tanınmış bir kurumdur.</p>
+        <p class="section__paragraph">Curacao lisansı, Roku-bet’in güvenilir bir bahis sitesi olduğunu gösterir. Lisanslama prosedürleri, site operatörlerinin adil ve etik kurallara uygun davranmalarını ve kullanıcıların haklarının korunmasını sağlamak için tasarlanmıştır. Ancak lisansın olduğu sitelerin de hileli olabileceği unutulmamalıdır. Bu nedenle, bahis yapmadan önce her zaman lisans bilgilerini kontrol etmenizi ve güvenilirlikleri konusunda araştırma yapmanızı önerilir.</p>
+      </section>
+      <section class="section">
+        <p class="section__title">Rokubet Canlı Destek Hizmeti Var Mı?</p>
+        <p class="section__paragraph">Evet, Roku casino kullanıcılarına canlı destek hizmeti sunar. Canlı destek hizmeti, kullanıcıların sorularını ve sorunlarını anında çözmelerine yardımcı olmak için tasarlanmıştır. Roku-bet’in canlı destek ekibi, 7 gün 24 saat hizmet verir ve kullanıcılara her türlü konuda yardımcı olur.</p>
+        <p class="section__paragraph">Canlı destek hizmetine erişmek için, Rokubet’in ana sayfasına gidin ve sayfanın sağ alt köşesindeki “Canlı Destek” düğmesine tıklayın. Bu, canlı destek penceresini açacak ve bir müşteri temsilcisiyle hemen bağlantı kurabileceksiniz. Ayrıca, Roku-casino destek ekibiyle dilediğiniz zaman iletişim kurabilirsiniz.</p>
+        <p class="section__paragraph">Canlı destek hizmeti, kullanıcıların siteyle ilgili herhangi bir sorunu çözmelerine yardımcı olur. Böylelikle dilediğiniz zamand bütün sorularınız hakkında bilgi sahibi olabilirsiniz. Canlı destek ekibi her daim sizlere sınırsız hizmet sunar.</p>
+      </section>
+      <section class="section">
+        <p class="section__title">Rokubet Ssl Sertifikası Var Mı?</p>
+        <p class="section__paragraph">Rokubet, online bahis ve oyun hizmetleri sunan bir platformdur. Kullanıcılar, Rokubet üzerinden çeşitli spor bahisleri, canlı bahis, casino oyunları, sanal sporlar ve e-spor oyunlarına bahis yapabilirler. Roku-casino, kullanıcılara güvenli bir bahis ortamı sunar ve SSL sertifikası kullanarak kişisel bilgilerin gizliliğine özen gösterir.</p>
+        <p class="section__paragraph">Ayrıca, kullanıcıların güvenlik düzeyini için 2 faktörlü kimlik doğrulama sistemini kullanır. Roku, kullanıcılara çeşitli spor müsabakalarına bahis yapma olanağı sunmaktadır. Bu sporlar arasında özellikle futbol ve basketbol ön plana çıkıyor. NBA ve Dünya Spor Liglerine bahis yapma olanağını sizlere sunar.</p>
+      </section>
+      <section class="section">
+        <p class="section__title">Roku Casino Hakkında Bilgiler</p>
+        <p class="section__paragraph">Rokubet, Türkiye’deki online bahis sitelerinden birisi olarak ön plana çıkar ve geniş standartlarda hizmetler sunmasıyla bilinir. Site, 2020 yılında kurulmuştur ve güvenilir bir platform olarak bilinir.</p>
+        <p class="section__paragraph">Rokubet’in bahis seçenekleri oldukça geniştir. Bahis severlere gelişmiş yöntemlerle bahis yapma avantajı sunarak onlara mükemmel bir platformda en iyi deneyimi sunmayı başarıyor. Bu seçenekler arasında, dünya genelinde popüler olan futbol, basketbol, tenis, voleybol gibi spor dalları da yer alır. Ayrıca, Roku-bet’in canlı bahis seçenekleri, maçların devam ettiği sırada bahis yapabilme imkanı sunar.</p>
+        <p class="section__paragraph">Roku casino sunduğu bonuslar ve promosyonlar da oldukça çekicidir. Aynı zamanda günümüzde sistem yeni üyelere özel olarak bonus seçenekleri de sunmayı başarır ve ayrıcalıklar sağlar. Ayrıca, sadakat programı aracılığıyla kullanıcılar, bahislerinde kazandıkları puanları nakit para olarak çekebilirler.</p>
+      </section>
+      <section class="section">
+        <p class="section__title">Roku Casino Güvenlik Önlemleri Nelerdir?</p>
+        <p class="section__paragraph">Rokucasino, kullanıcılarının güvenliği için de önlemler almıştır. Site, güvenilir ödeme seçenekleri sunar. Aynı zamanda SSL şifrelemesi kullanır. Ayrıca, Rokubet’in müşteri hizmetleri de 7/24 hizmet verir ve kullanıcıların herhangi bir sorunla karşılaşması durumunda hızlıca yardımcı olur. Roku-casino bahis sitesi, kullanıcılarına geniş bir bahis seçeneği, cazip bonuslar, güvenilir ödeme seçenekleri ve müşteri odaklı hizmetler sunar</p>
+        <p class="section__paragraph">Rokubet, Türkiye’deki en popüler bahis sitelerinden biridir ve kullanıcılarına geniş bir bahis ve casino oyunları yelpazesi sunar. Site, kullanıcıların güvenliğine büyük önem verir ve en son teknolojileri kullanarak güvenli bir bahis deneyimi sağlar.</p>
+      </section>
+      <section class="section">
+        <p class="section__title">Rokubet Hangi Oyunlar Bulunuyor?</p>
+        <p class="section__paragraph">Bahis severler, Rokubet’te spor müsabakalarına çok hızlı ve kolay bir şekilde bahis yapabilirler. Ayrıca, sanal sporlar ve e-sporlara da bahis yapma imkanı sunarlar. Bahis oranları oldukça yüksektir ve kullanıcılar, canlı bahislerle de heyecanlı bir deneyim yaşayabilirler.</p>
+        <p class="section__paragraph">Roku-bet ayrıca, birçok popüler casino oyununa da ev sahipliği yapar. Kullanıcılar, blackjack, rulet, poker, slot makineleri gibi birçok oyunu oynayabilirler. Tüm casino oyunları, adil ve güvenli bir ortamda sunulur ve kullanıcıların kazançlarını güvenli bir şekilde çekmelerine yardımcı olacak birçok ödeme seçeneği mevcuttur.</p>
+      </section>
+      <section class="section">
+        <p class="section__title">Rokubet Tasarımsal Özellikleri Nelerdir? Hoş Geldin Bonusu Var Mı?</p>
+        <p class="section__paragraph">Kullanıcı dostu arayüzü sayesinde, Rokucasino kolayca gezinilebilir ve kullanıcılar, istedikleri bahisleri kolayca bulabilirler. Ayrıca, müşteri hizmetleri ekibi 7/24 hizmet verir ve herhangi bir sorun veya sorularınızda size yardımcı olabilirler.</p>
+        <p class="section__paragraph">Rokubet, yeni kullanıcılara hoş geldin bonusu ve düzenli promosyonlar sunar. Dolayısıyla bu bonus seçenekleriyle bahis severler ayrıcalıklarından yararlanma olanaklarına sahip olabilir.</p>
+      </section>
+      <section class="section">
+        <p class="section__title">Rokubet Mobil Uyumlu Mu?</p>
+        <p class="section__paragraph">Roku-bet, mobil uyumlu bir bahis sitesidir. Bahis severlere birçok alanda bahis yapma ayrıcalığı ve seçeneği sunmasıyla bilinir. Android ve İOS uygulama, kullanıcılara daha hızlı ve daha kullanıcı dostu bir bahis deneyimi sunar.</p>
+        <p class="section__paragraph">Ayrıca, Rokubet’in VIP programı da mevcuttur. Kullanıcılar, bu programa katılarak özel bonuslar, promosyonlar ve kişisel hesap yöneticileri gibi birçok avantajdan yararlanabilirler.</p>
+        <p class="section__paragraph">Roku-bet, lisanslı bir bahis sitesidir ve kullanıcılarının güvenliğini sağlayarak en iyi bahis oynama deneyimini sunar. kullanıcıların bilgilerini ve ödemelerini korumak için SSL şifrelemesi kullanır. Müşteri hizmetleri ekibi, herhangi bir soru veya sorunla ilgili hızlı ve etkili bir şekilde yardımcı olur. Bahis severlere özel olarak sunulan müşteri destek hizmetiyle kişiler canlı bahis yapma avantajına erişir.</p>
+      </section>
+      <section class="section">
+        <p class="section__title">Rokubet Ödeme Seçenekleri Nelerdir?</p>
+        <p class="section__paragraph">Rokubet, bahis severlere geniş kapsamlı ödeme avantajları sunar. Bahis severlere havale yöntemi başta olmak üzere EFT yöntemi kripto cüzdan gibi birçok ödeme yöntemiyle hesaplarına para yatırabilir ve kazançlarını güvenli bir şekilde çekebilirler. Ayrıca, Roku-bet’in para yatırma ve çekme işlemleri için ücret talep etmediğini de belirtmek gerekir.</p>
+        <p class="section__paragraph">Roku casino, kullanıcılarının bahis yaparken keyifli ve sorunsuz bir deneyim yaşamalarını sağlamak için site hakkında detaylı bilgi ve kılavuzlar sunar. Kullanıcılar, bahis kurallarını ve casino oyunlarına ilişkin kuralları kolayca öğrenebilirler.</p>
+        <p class="section__paragraph">Rokubet platformu bahis severlere en iyi bahis deneyimi ve oyun deneyimi sunan popüler bir bahis sitesidir. Geniş bir bahis ve casino oyunları yelpazesi, yüksek bahis oranları ve çeşitli bonuslar ve promosyonlar, VIP programı avantajları ve kullanıcı dostu arayüzü gibi birçok özellik sunar. Ayrıca, güvenli ödeme seçenekleri, müşteri hizmetleri ekibi ve sorumlu bahis politikaları da kullanıcılar için önemli avantajlardır.</p>
+        <a href="/" target="_blank" rel="nofollow" class="section__button">Roku Casino’ya kayıt</a>
+      </section>
+      <section class="section">
+        <p class="section__title">Rokubet Spor Oyunları</p>
+        <p class="section__paragraph">Roku-casino bahis oyunları arasında, futbol, basketbol, tenis, voleybol, buz hokeyi, Amerikan futbolu, beyzbol, ragbi, MMA ve boks gibi birçok spor dalı bulunur. Ayrıca, kullanıcılar sanal sporlar, e-sporlar ve televizyon bahisleri gibi diğer seçeneklere de bahis yapabilirler.</p>
+        <p class="section__paragraph">Rokubet’in casino bölümünde, kullanıcılar slot makineleri, masa oyunları, video poker, canlı krupiyeler ile oynanabilen oyunlar gibi birçok oyun seçeneği bulabilirler. Casino bölümünde, dünya çapında tanınan oyun sağlayıcıları tarafından geliştirilen oyunlar bulunur, bu da kullanıcıların güvenilir ve adil bir oyun deneyimi yaşamasını sağlar.</p>
+        <p class="section__paragraph">Kullanıcılar, Roku-bet’in mobil uygulamasını kullanarak bahis yapmanın yanı sıra, aynı zamanda canlı bahis seçeneklerinden de yararlanabilirler. Canlı bahis seçeneği, kullanıcılara oyun sırasında bahis yapma imkanı sunar ve bu da bahis deneyimini daha heyecanlı hale getirir.</p>
+      </section>
+      <section class="section">
+        <p class="section__title">Rokubet Bonus Ve VIP Program Nedir?</p>
+        <p class="section__paragraph">Roku casino, kullanıcılarına birçok farklı bonus ve promosyon seçeneği sunar. İlk para yatırma bonusu, haftalık nakit iadesi, canlı casino bonusu, mobil ödül bonusu, arkadaşını getir bonusu ve daha birçok seçenek, kullanıcıların daha fazla kazanmalarına yardımcı olur.</p>
+        <p class="section__paragraph">Ayrıca, Rokubet’in VIP programı, kullanıcıların daha fazla kazanç elde etmeleri için özel avantajlar sunar. VIP programı, kullanıcının yaptığı bahis miktarına ve kazancına göre belirlenir ve kullanıcılara özel bonuslar, hediye çekleri, daha yüksek bahis limitleri, özel turnuvalar ve daha birçok avantaj sunar.</p>
+      </section>
+      <section class="section">
+        <p class="section__title">Roku Casino Yardım Masası/Destek Hakkında Önemli Bilgiler</p>
+        <p class="section__paragraph">Roku-casino, müşteri hizmetleri konusunda da özenli davranır. Kullanıcılara canlı destek hizmeti sunar ve e-posta yoluyla da iletişim kurulabilir. Müşteri hizmetleri ekibi, kullanıcıların her türlü sorununu çözmeye yardımcı olur.</p>
+        <p class="section__paragraph">Rokubet casino yardım masası sizlere 7-24 hizmet sunar ve dilediğiniz zaman yardım masasına bağlanarak hizmetlerden yararlanabilir. Rokubet’in sunduğu diğer hizmetler arasında çeşitli casino oyunları yer alır. Kullanıcılar slot oyunları, masa oyunları ve canlı krupiyer oyunları gibi birçok seçenek arasından seçim yapabilirler.</p>
+        <p class="section__paragraph">Ayrıca, Roku-bet’in kullanıcılarına özel bonuslar ve promosyonlar sunar. Rokubet kullanıcılarına güvenli ve çeşitli bahis ve casino oyunları sunarak keyifli bir oyun deneyimi sağlar. Ancak bahis oynamadan önce, yasal yaş sınırını ve yerel yasal düzenlemeleri dikkate almanız gerektiğini unutmayın.</p>
+      </section>
+      <section class="py-60">
+        <div class="container text-control-1">
+          <div class="faqs-section">
+            <div class="faq accordion border">
+              <div class="question-wrapper">
+                <div class="d-flex align-items-center"><span class="q-mark d-block"></span>
+                  <p class="question" title="">
+                    ROKU CASİNO'NUN HANGİ MÜŞTERİ DESTEK SİSTEMİ VAR?</p>
+                </div>
+                <i class="material-icons drop">
+                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path  d="M1.00049 1L6.00049 6L11.0005 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </i>
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer">Roku casino özel olarak müşteri destek sistemi hizmeti sunarak casino oyuncularına geniş hizmetler sunar. Böylelikle platformdaki kullanıcılar akıllarına takılanlar hakkında bilgi sahibi olabilirler.</p>
+              </div>
+            </div>
+            <div class="faq accordion border">
+              <div class="question-wrapper">
+                <div class="d-flex align-items-center"><span class="q-mark d-block"></span>
+                  <p class="question" title="">
+                    ROKUBET BİR MOBİL UYGULAMA SAĞLIYOR MU?</p>
+                </div>
+                <i class="material-icons drop">
+                  <svg class="12" height="7" viewBox="0 0 12 7" fill="none">
+                    <path d="M1.00049 1L6.00049 6L11.0005 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </i>
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer">Rokubet ailesi tarafından Android ve Apple cihazlarda desteklenen bir mobil uygulama mevcuttur. Bu mobil uygulamayla daha hızlı bir şekilde bahis yapabilirsiniz.</p>
+              </div>
+            </div>
+            <div class="faq accordion border">
+              <div class="question-wrapper">
+                <div class="d-flex align-items-center"><span class="q-mark d-block"></span>
+                  <p class="question" title="">KAZANÇLARIN OYUNCULARA TESLİM SÜRESİ NEDİR?</p>
+                </div>
+                <i class="material-icons drop">
+                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.00049 1L6.00049 6L11.0005 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </i>
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer">Kazançlar oyunculara anlık olarak yatırılır. Spor bahislerinde tercihiniz tuttuysa kazancınız hesabınıza direkt yatırılır, maçın sonlanması beklenmez. Casino oyunlarında ise anlık olarak kazançlar hesaplara yatar.</p>
+              </div>
+            </div>
+            <div class="faq accordion border">
+              <div class="question-wrapper">
+                <div class="d-flex align-items-center"><span class="q-mark d-block"></span>
+                  <p class="question" title="">
+                    ROKUBET GÜVENLİK POLİTİKALARI</p>
+                </div>
+                <i class="material-icons drop">
+                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.00049 1L6.00049 6L11.0005 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </i>
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer">Rokubet, kullanıcıların güvenliğini ve gizliliğini de önemser. Site, kullanıcıların kişisel korumak amacıyla gelişmiş düzeyde SSL sertifikasına sahiptir Ayrıca, site, kullanıcıların sorumlu bir şekilde bahis yapmalarını teşvik eder ve sorumlu bahis politikalarını benimser.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__casino">
+          <div class="footer__links">
+            <p class="footer__links-title">Bilgi</p>
+            <a href="/" class="footer__link">Hakkımızda</a>
+            <a href="/" class="footer__link">Gizlilik Politikası</a>
+            <a href="/" class="footer__link">Çerez Politikası</a>
+            <a href="/" class="footer__link">Şartlar ve Koşullar</a>
+          </div>
+          <div class="footer__info">
+            <img src="./images/footer_image.png" alt="footer logo" class="footer__image">
+            <div class="footer__info-text">
+              <p class="footer__info-paragraph">Bu web sitesi, Curacao yasalarına tabi olarak kayıtlı olan ve 126608 sicil numarasına sahip Abudantia B.V. tarafından işletilmektedir. Şirketin kayıtlı adresi Heelsumstraat 51 E-Commerce Park, Curacao'dur. Abudantia B.V., # 8048/JAZ oyun lisansını veren Antillephone N.V. tarafından verilen # 8048/JAZ2014-034 e-oyun alt lisansına sahiptir. Ödeme temsilcisi ise Abudantia N.V.'nin yan kuruluşu olan Striking Stingray Cyprus Limited'dir ve Kıbrıs yasalarına göre HE 398271 sicil numarası ile kayıtlı olan Chytron 30 2nd floor Flat/Office A22 1075 Nicosia Cyprus adresinde bulunmaktadır.</p>
+            </div>
+          </div>
+        </div>
+        <!-- <img src="./images/payment-systems.png" alt="paymant systems" class="footer__payment-images"/> -->
+        <div class="footer__images">
+          <div class="footer__social-links">
+            <a href="/" class="footer__social-link" target="_blank" rel="nofollow">
+              <svg class="footer__social-link-image" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4741 1.31861C8.10479 1.31861 1.31908 8.10723 1.31908 16.4827C1.31908 24.8581 8.10479 31.6467 16.4741 31.6467C24.8435 31.6467 31.6292 24.8581 31.6292 16.4827C31.6292 8.10723 24.8435 1.31861 16.4741 1.31861ZM0 16.4827C0 7.38011 7.37516 0 16.4741 0C25.5731 0 32.9483 7.38011 32.9483 16.4827C32.9483 25.5852 25.5731 32.9654 16.4741 32.9654C7.37516 32.9654 0 25.5852 0 16.4827Z" />
+                <path d="M21.219 8.5708H18.8468C17.7983 8.5708 16.7926 8.98758 16.0512 9.72944C15.3097 10.4713 14.8932 11.4775 14.8932 12.5266V14.9001H12.521V18.0648H14.8932V24.3942H18.0561V18.0648H20.4283L21.219 14.9001H18.0561V12.5266C18.0561 12.3168 18.1394 12.1156 18.2877 11.9672C18.436 11.8188 18.6371 11.7355 18.8468 11.7355H21.219V8.5708Z" />
+                <defs>
+                <linearGradient id="paint0_linear_597_3239" x1="16.4741" y1="0" x2="16.4741" y2="32.9654" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFC702"/>
+                <stop offset="1" stop-color="#FF8B20"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_597_3239" x1="16.87" y1="8.5708" x2="16.87" y2="24.3942" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFC702"/>
+                <stop offset="1" stop-color="#FF8B20"/>
+                </linearGradient>
+                </defs>
+              </svg>                
+            </a>
+            <a target="_blank" rel="nofollow" href="/" class="footer__social-link">
+              <svg class="footer__social-link-image" width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9857 1.31861C8.60784 1.31861 1.81627 8.1078 1.81627 16.4827C1.81627 24.8576 8.60784 31.6467 16.9857 31.6467C25.3635 31.6467 32.155 24.8576 32.155 16.4827C32.155 8.1078 25.3635 1.31861 16.9857 1.31861ZM0.497192 16.4827C0.497192 7.37955 7.87933 0 16.9857 0C26.092 0 33.4741 7.37955 33.4741 16.4827C33.4741 25.5858 26.092 32.9654 16.9857 32.9654C7.87933 32.9654 0.497192 25.5858 0.497192 16.4827Z" />
+                <path d="M24.7784 12.5648C24.6858 12.2201 24.5043 11.9057 24.252 11.6532C23.9997 11.4007 23.6855 11.2188 23.3408 11.1258C22.0719 10.7847 16.9857 10.7847 16.9857 10.7847C16.9857 10.7847 11.8995 10.7847 10.6307 11.124C10.2859 11.2167 9.97148 11.3984 9.71914 11.651C9.46679 11.9036 9.28536 12.2181 9.19308 12.5629C8.85364 13.8331 8.85364 16.4824 8.85364 16.4824C8.85364 16.4824 8.85364 19.1317 9.19308 20.4001C9.38005 21.1005 9.93187 21.6521 10.6307 21.839C11.8995 22.1801 16.9857 22.1801 16.9857 22.1801C16.9857 22.1801 22.0719 22.1801 23.3408 21.839C24.0414 21.6521 24.5915 21.1005 24.7784 20.4001C25.1179 19.1317 25.1179 16.4824 25.1179 16.4824C25.1179 16.4824 25.1179 13.8331 24.7784 12.5648ZM15.3702 18.9139V14.0509L19.5815 16.4643L15.3702 18.9139Z" />
+                <defs>
+                <linearGradient id="paint0_linear_597_3242" x1="16.9857" y1="0" x2="16.9857" y2="32.9654" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFC702"/>
+                <stop offset="1" stop-color="#FF8B20"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_597_3242" x1="16.9857" y1="10.7847" x2="16.9857" y2="22.1801" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFC702"/>
+                <stop offset="1" stop-color="#FF8B20"/>
+                </linearGradient>
+                </defs>
+              </svg>                
+            </a>
+            <a target="_blank" rel="nofollow" href="/" class="footer__social-link">
+              <svg class="footer__social-link-image" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5115 1.31861C8.13372 1.31861 1.34215 8.1078 1.34215 16.4827C1.34215 24.8576 8.13372 31.6467 16.5115 31.6467C24.8894 31.6467 31.6809 24.8576 31.6809 16.4827C31.6809 8.1078 24.8894 1.31861 16.5115 1.31861ZM0.0230713 16.4827C0.0230713 7.37955 7.40521 0 16.5115 0C25.6179 0 33 7.37955 33 16.4827C33 25.5858 25.6179 32.9654 16.5115 32.9654C7.40521 32.9654 0.0230713 25.5858 0.0230713 16.4827Z" />
+                <path d="M25.0258 9.52634C24.2845 10.049 23.4638 10.4488 22.5952 10.7102C22.1291 10.1744 21.5095 9.7946 20.8204 9.62223C20.1312 9.44986 19.4058 9.49321 18.7421 9.74644C18.0784 9.99966 17.5085 10.4505 17.1096 11.0381C16.7106 11.6256 16.5017 12.3215 16.5112 13.0315V13.8053C15.1509 13.8406 13.803 13.539 12.5876 12.9274C11.3721 12.3159 10.3268 11.4133 9.5448 10.3001C9.5448 10.3001 6.44861 17.2641 13.415 20.3592C11.8209 21.4409 9.92188 21.9833 7.9967 21.9067C14.9631 25.7756 23.4777 21.9067 23.4777 13.0083C23.4769 12.7928 23.4562 12.5778 23.4157 12.3661C24.2057 11.5873 24.7632 10.604 25.0258 9.52634Z" />
+                <defs>
+                <linearGradient id="paint0_linear_597_3224" x1="16.5115" y1="0" x2="16.5115" y2="32.9654" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4EFFC3"/>
+                <stop offset="1" stop-color="#25CE76"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_597_3224" x1="16.5112" y1="9.51855" x2="16.5112" y2="23.4029" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4EFFC3"/>
+                <stop offset="1" stop-color="#25CE76"/>
+                </linearGradient>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__payment">
+          <img src="images/papara.svg" alt="papara" class="footer__payment-image">
+          <img src="images/pep.svg" alt="pep" class="footer__payment-image">
+          <img src="images/btc.svg" alt="bitcoin" class="footer__payment-image">
+          <img src="images/ethereum.svg" alt="ethereum" class="footer__payment-image">
+          <img src="images/sticpay.svg" alt="sticpay" class="footer__payment-image">
+          <img src="images/havale.svg" alt="aninda havale" class="footer__payment-image">
+        </div>
+        <div class="footer__payment footer__payment--second">
+          <img src="images/netent-desktop.svg" alt="netent" class="footer__payment-image">
+          <img src="images/evolution_games-desktop.svg" alt="evolution gaming" class="footer__payment-image">
+          <img src="images/betsoft.svg" alt="betsoft" class="footer__payment-image">
+          <img src="images/ezugi.svg" alt="ezugi" class="footer__payment-image">
+          <img src="images/playson-desktop.svg" alt="playson" class="footer__payment-image">
+          <img src="images/pragmatic_desktop.svg" alt="pragmatic" class="footer__payment-image">
+          <img src="images/quckfire.svg" alt="quckfire" class="footer__payment-image">
+        </div>
+        <!-- <div class="fixed__buttons">
+          <a href="https://btt-tr.wqetxrk.com/tr/casino?partner=p2855p19355pa305&source=Buzznw" class="fixed__button fixed__button--giris">Giris</a>
+          <a href="https://btt-tr.wqetxrk.com/tr/casino?partner=p2855p19355pa305&source=Buzznw" class="fixed__button fixed__button--katyl">Katyl</a>
+        </div> -->
+      </div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
