@@ -12,6 +12,7 @@ h4,
 h5,
 h6,
 table,
+div,
 tr,
 td,
 th,
@@ -36,6 +37,10 @@ body {
   background-color: #0C1D23;
 }
 
+.open {
+  overflow-y: hidden;
+}
+
 .background {
   background: url('../images/header_background.jpg') no-repeat;
   background-size: cover;
@@ -47,13 +52,15 @@ body {
 }
 
 .header {
-  position: absolute;
-  top: 25px;
+  position: fixed;
+  padding: 15px 0;
   display: flex;
-  width: 1052px;
+  width: 100%;
   z-index: 2;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
   align-items: center;
+  transition: all 0.3s linear;
 }
 
 .header__info {
@@ -75,6 +82,15 @@ body {
   height: 35px;
 }
 
+.close__image {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  position: relative;
+  left: 60px;
+  top: 20px;
+}
+
 .nav__text {
   font-weight: 600;
   color: white;
@@ -84,6 +100,7 @@ body {
   font-weight: 800;
   font-size: 14px;
   padding: 13px 30px;
+  white-space: nowrap;
   height: 40px;
   border-radius: 84px;
   background: linear-gradient(#FFC702, #FF8B20);
@@ -99,6 +116,8 @@ body {
 
 .main__image {
   background-repeat: no-repeat;
+  border-radius: 17px;
+  background-position: 80%;
   height: 350px;
 }
 
@@ -142,16 +161,15 @@ button {
 }
 
 .slick-dots {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	font-size: 0px;
-	gap: 3px;
+	gap: 4px;
 	cursor: pointer;
+  display: flex;
 	z-index: 5;
 	position: absolute;
-	left: 50%;
   bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .slick-dots li button {
@@ -161,17 +179,17 @@ button {
 .slick-dots li {
 	display: inline-block;
 	transition: all 0.2s linear;
+  border-radius: 5px;
 }
 
 .slick-dots li{
-	width: 9px;
-	height: 9px;
+	width: 60px;
+	height: 5px;
 	background-color: rgba(255, 255, 255, 0.25);
-	border-radius: 17px;
 }
 
 .slick-dots .slick-active {
-	width: 21px;
+	width: 60px;
 	transition: all 0.2s linear;
 	background-color: rgba(255, 214, 14, 1);
 }
@@ -403,6 +421,8 @@ button {
 .welcome-banner__button {
   border-radius: 84px;
   padding: 13px 30px;
+  white-space: nowrap;
+  text-transform: uppercase;
   height: 44px;
   font-weight: 800;
   font-size: 14px;
@@ -473,7 +493,11 @@ button {
 }
 
 .first-table-title {
-  width: 255px;
+  width: 205px;
+}
+
+.header__background {
+  background-color: #0C1D23;
 }
 
 .table-description {
@@ -493,6 +517,31 @@ button {
   align-items: center;
 }
 
+.image__container {
+  background-color: #133C36;
+  border-radius: 50%;
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger__link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.burger_links {
+  display: flex;
+  margin-left: 80px;
+  margin-top: 35px;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .table-title-description {
   padding: 8px 0;
   font-size: 14px;
@@ -501,7 +550,7 @@ button {
 .section__title {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 48px;
   color: white;
   margin-top: 40px;
@@ -568,12 +617,28 @@ button {
   display: block;
   text-align: center;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 20px;
   cursor: pointer;
   border-radius: 17px;
   padding: 10px 15px;
+  text-transform: uppercase;
   color: black;
   margin-top: 30px;
+  width: 100%;
+}
+
+.burger-open {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(12, 29, 35, 1);
+  z-index: 30;
+  position: fixed ;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.burger-menu--open {
+  transform: translateX(0);
 }
 
 .py-60 {
@@ -657,7 +722,7 @@ h2 {
 
 .footer {
   background-color: #1D222F;
-  padding: 20px 0 38px;
+  padding: 20px 0 10px;
   display: flex;
   justify-content: center;
 }
@@ -763,6 +828,33 @@ h2 {
   width: 10%;
 }
 
+.footer__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.license, .live__chat, .live__bets, .promos, .mobile__homepage, .registration, .homepage {
+  border-radius: 17px;
+  width: 70%;
+}
+
+.footer__payment-image--mobile {
+  display: none;
+}
+
+.fixed__buttons {
+  display: none;
+}
+
+.fixed__button {
+  z-index: 100;
+}
+
+.fixed__links {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .nav {
     display: none;
@@ -777,6 +869,7 @@ h2 {
   
   .open__image {
     width: 40px;
+    cursor: pointer;
   }
   
   .main__logo {
@@ -790,9 +883,14 @@ h2 {
   .slider,
   .section,
   .py-60,
-  .header,
   .footer__container {
     width: calc(100% - 120px);
+  }
+
+  .header {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .container {
@@ -800,9 +898,184 @@ h2 {
   }
 
   .section__title {
-    font-size: 40px;
+    font-size: 35px;
+  }
+
+  .header {
+    gap: 10px;
+    justify-content: space-between;
   }
 }
 
 @media (max-width: 720px) {
+  .section,
+  .py-60,
+  .footer__container {
+    width: calc(100% - 32px);
+  }
+
+  .tapbar {
+    display: flex;
+    padding: 0 16px;
+    justify-content: space-between;
+  }
+
+  .tapbar__image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tapbar__element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .footer__payment--second {
+    margin-bottom: 170px;
+  }
+
+  .tapbar__text {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .slider {
+    height: 320px;
+    width: 100%;
+    top: 80px;
+  }
+
+  .main__image {
+    height: 320px;
+    border-radius: 0px;
+  }
+
+  .close__image {
+    left: 16px;
+  }
+
+  .burger_links {
+    margin-left: 36px;
+  }
+
+  .footer__casino {
+    flex-direction: column;
+  }
+
+  .footer__info-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .footer__images {
+    justify-content: center;
+  }
+
+  .footer__casino {
+    gap: 20px;
+  }
+
+  .footer__info {
+    margin-bottom: 30px;
+  }
+
+  .welcome-banner__title {
+    font-size: 34px;
+    line-height: 39px;
+    left: 16px;
+  }
+
+  .welcome-banner__paragraph {
+    font-size: 14px;
+    left: 16px;
+  }
+
+  .header__info {
+    height: 380px;
+  }
+
+  .welcome-banner__button {
+    width: 115px;
+    height: 35px;
+    font-size: 13px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .welcome-banner__buttons {
+    left: 16px;
+  }
+
+  .payment--desktop {
+    display: none;
+  }
+
+  .footer__payment-image--mobile {
+    display: inline-block;
+    width: 70px;
+    opacity: 0.5;
+  }
+
+  .footer__payment-image--mobile--full-visible {
+    opacity: 1;
+  }
+
+  .footer__payment {
+    flex-wrap: wrap;
+  }
+
+  .fixed__button {
+    background-color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+    font-weight: 800;
+    padding: 12px 0;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    bottom: 12px;
+  }
+
+  .fixed__buttons {
+    display: flex;
+  }
+
+  .fixed__links {
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+    background-color: #1D222F;
+    left: 0;
+    right: 0;
+    position: fixed;
+  }
+
+  .fixed__button--katyl {
+    left: 0;
+    color: black;
+    background: linear-gradient(rgba(255, 199, 2, 1) 0%, rgba(255, 139, 32, 1) 100%);
+  }
+
+  .fixed__button--giris {
+    color: black;
+    background: linear-gradient(rgba(78, 255, 195, 1) 0%, rgba(37, 206, 118, 1) 100%);    
+    right: 0px;
+  }
+
+  .main__image--first {
+    background-size: cover;
+  }
 }

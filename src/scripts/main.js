@@ -6,7 +6,7 @@ $(document).ready(function(){
     autoplay:true,
     speed: 500,
     dots: false,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 4022200,
     slidesToShow:1,
     slidesToScroll:1,
     pauseOnHover:true,
@@ -15,8 +15,9 @@ $(document).ready(function(){
     nextArrow:'<span class="Slider-Slick-Next"></span>',
     easing:"linear",
     responsive:[
-      {breakpoint:1025,settings:{
+      {breakpoint:721,settings:{
         dots: true,
+        appendArrows:$(".SliderArros"),
       }},
     ],
   })
@@ -55,14 +56,35 @@ $(".question-wrapper").click( function () {
 
 const button = document.getElementById('burger-menu');
 const menu = document.getElementById('menu');
-const closedMenu = document.getElementById('burger-menu--closed');
+const closedMenu = document.getElementById('close_menu');
+const body = document.getElementById('body');
 
 button.addEventListener('click', () => {
-  menu.classList.remove('burger-menu--open');
-  menu.classList.add('burger-menu--closed');
+  menu.classList.add('burger-menu--open');
+  menu.classList.remove('burger-menu--closed');
+  body.classList.add('open');
 });
 
 closedMenu.addEventListener('click', () => {
-  menu.classList.add('burger-menu--open');
-  menu.classList.remove('burger-menu--closed');
+  menu.classList.remove('burger-menu--open');
+  body.classList.remove('open');
+  menu.classList.add('burger-menu--closed');
+});
+
+const button_top = $('#button');
+const header = document.getElementById('header');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    button_top.addClass('show');
+    header.classList.add('header__background');
+  } else {
+    button_top.removeClass('show');
+    header.classList.remove('header__background');
+  }
+});
+
+button_top.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
 });
