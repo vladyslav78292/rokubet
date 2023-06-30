@@ -12,6 +12,8 @@ h4,
 h5,
 h6,
 table,
+svg,
+b,
 div,
 tr,
 td,
@@ -870,7 +872,14 @@ button {
   gap: 10px;
 }
 
+.footer__social-link {
+  height: 33px;
+  width: 33px;
+}
+
 .footer__social-link-image {
+  height: 33px;
+  width: 33px;
   transition: all 0.2s linear;
   fill:rgba(255, 139, 32, 1);
 }
