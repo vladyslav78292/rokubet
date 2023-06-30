@@ -1032,6 +1032,11 @@ button {
   background: #00b456;
 }
 
+.footer__images--labels {
+  display: flex;
+  gap: 10px;
+}
+
 @media (max-width: 1200px) {
   .nav {
     display: none;
@@ -1300,5 +1305,13 @@ button {
 
   .live__container, .registration__container, .license__container {
     flex-direction: column;
+  }
+
+  .footer__images--labels {
+    flex-direction: column;
+  }
+
+  .footer__social-links {
+    justify-content: center;
   }
 }
