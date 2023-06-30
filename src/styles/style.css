@@ -32,6 +32,7 @@ a {
   color: black;
 }
 
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #0C1D23;
@@ -144,8 +145,12 @@ body {
 	height: 350px;
 	width: 1052px;
 	overflow:hidden;
+  cursor: grab;
 }
 
+.slider:active {
+  cursor: grabbing;
+}
 .burger {
   display: none;
 }
@@ -808,6 +813,7 @@ h2 {
 }
 
 .footer__social-link-image {
+  transition: all 0.2s linear;
   fill:rgba(255, 139, 32, 1);
 }
 
@@ -939,6 +945,7 @@ h2 {
 
   .tapbar__text {
     color: rgba(255, 255, 255, 0.75);
+    transition: all 0.2s linear;
   }
 
   .header {
@@ -1075,7 +1082,20 @@ h2 {
     right: 0px;
   }
 
-  .main__image--first {
+  .main__image {
     background-size: cover;
+  }
+
+  .tapbar__image {
+    transition: all 0.2s linear;
+    fill: rgb(12,173,119);
+  }
+
+  .tapbar__element:hover > svg {
+    fill: rgb(255,165,16);
+  }
+
+  .tapbar__element:hover > p {
+    color: white;
   }
 }

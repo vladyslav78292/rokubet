@@ -6,7 +6,7 @@ $(document).ready(function(){
     autoplay:true,
     speed: 500,
     dots: false,
-    autoplaySpeed: 4022200,
+    autoplaySpeed: 4000,
     slidesToShow:1,
     slidesToScroll:1,
     pauseOnHover:true,
