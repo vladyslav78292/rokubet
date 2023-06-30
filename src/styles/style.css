@@ -110,6 +110,12 @@ body {
   box-shadow: 0px 2px #BF6D16, 0px -2px #FFDD68;
   display: flex;
   align-items: center;
+  transition: all .3s ease-in-out;
+}
+
+.header__button:hover {
+  transform: scale(1.1);
+  color: white;
 }
 
 .header__wrapper {
@@ -505,12 +511,22 @@ button {
   color: rgba(41, 38, 58, 1);
   width: 135px;
   background: linear-gradient(#FFC702, #FF8B20);
+  transition: all 0.2s ease-in-out;
+}
+
+.orange__button:hover {
+  transform: scale(1.1);
 }
 
 .transparent__button {
   color: white;
   width: 154px;
   border: 3px solid rgba(37, 206, 118, 1);
+  transition: all 0.2s ease-in-out;
+}
+
+.transparent__button:hover {
+  transform: scale(1.1);
 }
 
 .welcome-banner__buttons {
@@ -697,6 +713,12 @@ button {
   color: black;
   margin-top: 30px;
   width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.section__button:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .burger-open {
@@ -877,6 +899,7 @@ button {
   width: 33px;
 }
 
+
 .footer__social-link-image {
   height: 33px;
   width: 33px;
@@ -988,6 +1011,25 @@ button {
 
 .live__container {
   flex-direction: row-reverse;
+}
+
+::-webkit-scrollbar {
+  background: #000000;
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #005a2b;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00b456;
 }
 
 @media (max-width: 1200px) {

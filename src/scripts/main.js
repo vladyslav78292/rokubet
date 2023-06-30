@@ -75,9 +75,10 @@ const button_top = $('#button');
 const header = document.getElementById('header');
 
 $(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
+  if ($(window).scrollTop() > 300 && !body.classList.contains('open')) {
     button_top.addClass('show');
     header.classList.add('header__background');
+    console.log(2)
   } else {
     button_top.removeClass('show');
     header.classList.remove('header__background');
