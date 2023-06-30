@@ -151,6 +151,71 @@ body {
 .slider:active {
   cursor: grabbing;
 }
+
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+
+#button {
+  margin: 30px;
+  background: linear-gradient(#FFC702, #FF8B20);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+#button::after {
+  line-height: 35px;
+  position: relative;
+  color: #232939;
+  top: 15px;
+}
+
 .burger {
   display: none;
 }
@@ -650,13 +715,6 @@ button {
   padding: 30px 0 0;
 }
 
-h2 {
-  font-size: 32px;
-  color: #000;
-  line-height: 1.25;
-  text-transform: uppercase;
-}
-
 .material-icons {
   transition: all 0.3s ease-in-out;
   stroke: white;
@@ -845,6 +903,49 @@ h2 {
   width: 70%;
 }
 
+.promos {
+  position: relative;
+  left: 50%;
+  margin-top: 30px;
+  transform: translateX(-50%);
+  width: 60%;
+}
+
+.live__bets {
+  position: relative;
+  left: 50%;
+  margin-top: 30px;
+  transform: translateX(-50%);
+}
+
+.mobile__homepage {
+  margin-top: 30px;
+  width: 40%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.license {
+  height: 296px;
+  width: 280px;
+}
+
+.live__chat {
+  height: 320px;
+}
+
+.registration {
+  width: 40%;
+}
+
+.homepage {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+}
+
 .footer__payment-image--mobile {
   display: none;
 }
@@ -859,6 +960,25 @@ h2 {
 
 .fixed__links {
   display: none;
+}
+
+.title__faq {
+  margin-bottom: 20px;
+}
+
+.license__container, .live__container, .registration__container {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.paragraph-in-container {
+  margin-top: 0;
+}
+
+.live__container {
+  flex-direction: row-reverse;
 }
 
 @media (max-width: 1200px) {
@@ -880,6 +1000,7 @@ h2 {
   
   .main__logo {
     height: 40px;
+    fill: red !important;
   }
 
   .burger {
@@ -1097,5 +1218,36 @@ h2 {
 
   .tapbar__element:hover > p {
     color: white;
+  }
+
+  #button {
+    height: 45px;
+    width: 45px;
+    bottom: 110px;
+    right: 0px;
+  }
+
+  #button::after {
+    top: 5px;
+  }
+
+  .homepage {
+    width: 100%;
+  }
+
+  .license {
+    margin-top: 30px;
+  }
+
+  .live__chat {
+    width: 240px;
+  }
+
+  .registration, .promos, .mobile__homepage, .live__bets {
+    width: 100%;
+  }
+
+  .live__container, .registration__container, .license__container {
+    flex-direction: column;
   }
 }
