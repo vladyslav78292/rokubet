@@ -65,7 +65,6 @@ $(window).scroll(function() {
   if ($(window).scrollTop() > 300 && !body.hasOwnProperty('open')) {
     button_top.addClass('show');
     header.classList.add('header__background');
-    console.log(2)
   } else {
     button_top.removeClass('show');
     header.classList.remove('header__background');
