@@ -953,7 +953,7 @@ button {
   gap: 10px;
 }
 
-.license, .live__chat, .live__bets, .promos, .mobile__homepage, .registration, .homepage {
+.license, .live__chat, .live__bets, .promos, .registration, .homepage {
   border-radius: 17px;
   width: 70%;
 }
@@ -976,9 +976,6 @@ button {
 .mobile__homepage {
   margin-top: 30px;
   width: 40%;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .license {
@@ -992,7 +989,10 @@ button {
 }
 
 .registration {
-  width: 40%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
 }
 
 .homepage {
@@ -1157,8 +1157,13 @@ button {
   min-width: 130px;
 }
 
-.thirteenth-table-first-column {
+.thirteenth-table-row, .fourteenth-table-row {
+  min-width: auto;
+}
+
+.thirteenth-table-first-column, .fourteenth-table-first-column {
   width: 130px;
+  min-width: 130px;
 }
 
 .thirteenth-table {
@@ -1185,13 +1190,71 @@ button {
 }
 
 .fourteenth-table-first-column {
-  width: 300px;
-  min-width: 300px;
+  width: 150px;
+  min-width: 150px;
 }
 
 .fourteenth-table {
-  width: 600px;
+  width: auto;
   margin: 34px auto 0;
+}
+
+.roulette {
+  width: 55%;
+}
+
+.license__container, .live__container, .registration__container, .homepage__container, .roulette__container {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.mobile__homepage {
+  width: 30%;
+  border-radius: 17px;
+}
+
+.promos {
+  position: relative;
+  left: 50%;
+  margin-top: 30px;
+  transform: translateX(-50%);
+  width: 60%;
+}
+
+.live__bets {
+  position: relative;
+  left: 50%;
+  margin-top: 30px;
+  transform: translateX(-50%);
+}
+
+
+.jackpot__image {
+  width: 55%;
+  position: relative;
+  left: 50%;
+  margin: 20px 0;
+  transform: translateX(-50%);
+}
+
+.license {
+  height: 206px;
+  min-width: 190px;
+  width: 190px;
+}
+
+.roulette__container {
+  justify-content: space-between;
+}
+
+.bonus, .payments {
+  margin-top: 30px;
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (max-width: 1200px) {
@@ -1247,11 +1310,33 @@ button {
   }
 }
 
+@media (max-width:960px) {
+  .roulette {
+    width: 100%;
+  }
+
+  .roulette__container {
+    flex-direction: column;
+  }
+
+  .section__list {
+    align-self: start;
+  }
+}
+
 @media (max-width: 720px) {
   .section,
   .questions,
   .footer__container {
     width: calc(100% - 32px);
+  }
+
+  .homepage__container {
+    flex-direction: column;
+  }
+
+  .bonus, .payments, .mobile__homepage {
+    width: 100%;
   }
 
   .first-table {
@@ -1457,7 +1542,7 @@ button {
     width: 200px;
   }
 
-  .registration, .promos, .mobile__homepage, .live__bets {
+  .registration, .promos, .live__bets {
     width: 100%;
   }
 

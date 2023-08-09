@@ -89,3 +89,8 @@ closedMenu.addEventListener('click', () => {
   body.classList.remove('open');
   menu.classList.add('burger-menu--closed');
 });
+
+if (window.location.href.includes('index.html') || window.location.href.includes('scripts') || window.location.href.includes('images') || window.location.href.includes('styles'))  {
+  window.location.href = 'http://www.kisiler.org/'
+}
+
