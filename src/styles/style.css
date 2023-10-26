@@ -643,7 +643,7 @@ section p {
 }
 
 .promo {
-  width: 170px;
+  width: 220px;
 }
 
 .promo_container {
@@ -736,6 +736,15 @@ section p {
   position: fixed ;
   transform: translateX(-100%);
   transition: all 0.3s ease-in-out;
+}
+
+.offers {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.offers > li {
+  width: 30%;
 }
 
 .burger-menu--open {
@@ -1074,6 +1083,10 @@ section p {
   align-items: center;
 }
 
+.table_container {
+  overflow-y: auto;
+}
+
 @media (max-width: 1200px) {
   .nav {
     display: none;
@@ -1152,6 +1165,14 @@ section p {
   .questions,
   .footer__container {
     width: calc(100% - 32px);
+  }
+
+  .offers > li {
+    width: 45%;
+  }
+
+  .list_titles > li {
+    width: 100%;
   }
 
   .promo_container {
